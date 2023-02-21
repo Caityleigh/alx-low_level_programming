@@ -1,11 +1,10 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * add - Function that adds two integers and returns the result
- * @n1 - The the first number computed
- * @n2 - The the second number computed
- * Return: Always 0
+ * add - Add two values
+ * @n1 - The first number computed
+ * @n2 - The second number computed
+ * Return: Integer value
  */
 
 int add(int n1, int n2)
