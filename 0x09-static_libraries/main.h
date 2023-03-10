@@ -3,7 +3,7 @@
 
 /*
  * File: main.h
- * Auth: iVGeek
+ * Auth: Caityleigh
  * Desc: Header file containing the prototypes of all functions
  *       included in the static library libholberton.a.
  */
