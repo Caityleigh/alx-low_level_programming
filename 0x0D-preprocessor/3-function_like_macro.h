@@ -1,4 +1,9 @@
-#ifndef _3-FUNCTION_LIKE_MACRO_H
-#define _3-FUNCTION_LIKE_MACRO_H
-#define ABS(x) ((x) < 0 ? (-x) : (x))
-#endif
+#ifndef _function_like_macro_h_
+#define _function_like_macro_h_
+
+/**
+ * Function-like macro that computes absolute
+ * value of a number
+ */
+#define ABS(x) (((x) < 0) ? ((-1) : (x)))
+#endif /*_function_like_macro_h_*/
