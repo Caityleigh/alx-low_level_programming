@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "function_pointers.h"
 
 
@@ -11,13 +10,7 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	/*
-	 * Print_name ensures that both
-	 * 'name' and 'f' inputs are not
-	 * 'NULL'.
-	 */
-
-	if (name == NULL || f == NULL)
+	if (name == '\0' || f == '\0')
 		return;
 
 	f(name);
