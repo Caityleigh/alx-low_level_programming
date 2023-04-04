@@ -10,7 +10,6 @@
 
 #include <stdlib.h>
 
-// Data structure for project
 
 /**
  * struct listint_s - singly linked list
@@ -26,8 +25,6 @@ typedef struct listint_s
     struct listint_s *next;
 } listint_t;
 
-
-// Prototypes of Functions 
 
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
