@@ -1,10 +1,10 @@
-#ifndef lists_h
-#define list_h
+#ifndef LISTS_H
+#define LISTS_H
 
 /**
- * Desc: Header file that contains all the prototypes and 
- * 	definitions for the functions & types written in
- * 	0x013. C - More singly linked lists (ALX project)
+ * Desc: Header file that contains all the prototypes and
+ * definitions for the functions & types written in
+ * 0x013. C - More singly linked lists (ALX project)
  */
 
 
@@ -19,10 +19,13 @@
  * Description: singly linked list node structure
  *
  */
+
 typedef struct listint_s
 {
-    int n;
-    struct listint_s *next;
+
+int n;
+struct listint_s *next;
+
 } listint_t;
 
 
@@ -42,4 +45,4 @@ size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
 
-#endif /* lists_h */
+#endif /* LISTS_H */
