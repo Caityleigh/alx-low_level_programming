@@ -16,21 +16,20 @@ listint_t *add_nodeint(listint_t **head, const int n)
 
 	/* Allocates memory for node */
 
-new_node = malloc(sizeof(listint_t));
-
-if (new_node == NULL)
-{
-	return (NULL);
-}
+	new_node = malloc(sizeof(listint_t));
+	if (new_node == NULL)
+	{
+		return (NULL);
+	}
 
 	/* Initialize the new node */
 
-new_node->n = n;
-new_node->head = *head;
+	new_node->n = n;
+	new_node->head = *head;
 
 	/* Set head pointer to new node */
 
-*head = new_node;
+	*head = new_node;
 
 	return (new_node);
 }
