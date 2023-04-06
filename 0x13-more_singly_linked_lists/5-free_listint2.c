@@ -3,10 +3,8 @@
 #include <stdlib.h>
 
 /**
- * free_listint2 - A function that frees a listint_t list and sets the head to NULL
+ * free_listint2 - Frees a listint_t list and sets the head to NULL
  * @head: A double pointer to the first node in the listint_t list.
- *
- * Return: Void
  */
 
 void free_listint2(listint_t **head)
@@ -16,7 +14,7 @@ void free_listint2(listint_t **head)
 
 	if (head == position)
 	{
-		return (0);
+		return;
 	}
 
 	while (*head != NULL)
