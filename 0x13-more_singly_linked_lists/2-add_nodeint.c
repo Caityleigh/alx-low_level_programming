@@ -9,8 +9,7 @@
  *
  * @n: The value to be stored in the new node.
  *
- * Return: If function fails - NULL, or the
- * address of the new node.
+ * Return: the address of the new element, or NULL if it failed
  */
 
 
