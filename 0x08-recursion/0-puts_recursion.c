@@ -2,18 +2,18 @@
 
 /**
  * _puts_recursion - Prints a string.
- * @s: Pointer to the first character in a string.
- * Return: Always (0)
+ * @s: String to be printed.
  */
+
 
 void _puts_recursion(char *s)
 {
-	if (*s == '\0')
+	if (*s)
 	{
-		putchar('\n');
+		_putchar(*s);
+		_puts_recursion(s + 1);
 	}
 
 	else
-		putchar(*s);
-		_put_recursion(s + 1);
+		_putchar('\n');
 }
