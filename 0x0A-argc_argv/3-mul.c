@@ -16,9 +16,8 @@ int main(int argc, char *argv[])
 
 	if (argc == 3)
 	{
-		num1 = atoi(argv[argc - 1]);
-		num2 = atoi(argv[argc - 1]);
-		argv[0] = 0;
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[1]);
 
 		printf("%d\n", num1 * num2);
 		return (0);
