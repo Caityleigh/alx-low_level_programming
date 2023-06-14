@@ -1,53 +1,47 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
+#include <ctype.h>
+#include <string.h>
 
 /**
- * isitNumeric - checks to see if a string is numeric.
- * @s: string checked
- * Return: True if numeric, or False if not.
- */
-
-bool isitNumeric(char *s)
-{
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		if (s[i] < 48 || s[i] > 57)
-		{
-			return (false);
-		}
-	}
-	return (true);
-}
-
-
-/**
- * main - Entry Point
- * @argc: Argument count
- * @argv: Argument vector
+ * main - A program that adds all integer arguments and returns the sum.
  *
- * Return: Always 0 (Success)
+ * @argc: Number of arguments.
+ * @argv: Array name.
+ *
+ * Return: 1 if passed arugment is not an integer, otherwise 0.
  */
 
 int main(int argc, char *argv[])
 {
-	int i;
-	int sum = 0;
+	int i, j, len, sum;
+	char *p;
 
-	for (i = 0; i < argc; i++)
+	if (argc < 2)
+		printf("0\n");
+
+	else
 	{
-		if (!isitNumeric(argv[i]))
+		sum = 0;
+		for (i = 1; i < argc; i++)
 		{
-			printf("Error\n");
-			return (1);
+			p = argv[i];
+			len = strlen(p);
+
+			for (j = 0 ; j < len; j++)
+			{
+				if (isdigit(*(p + j)) == 0)
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+
+			sum += atoi(argv[i]);
 		}
-		sum += atoi(argv[i]);
-	}
 
-	printf("%d\n", sum);
-	return (0);
+			printf("%d\n", sum);
+		}
+		return (0);
 }
-
 
