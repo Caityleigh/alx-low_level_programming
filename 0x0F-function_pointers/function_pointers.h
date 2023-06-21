@@ -1,6 +1,6 @@
 #ifndef _function_pointers_h_
 #define _function_pointers_h_
-
+#include <stddef.h>
 
 /* 0x0F. C - Function Pointer Prototypes */
 
