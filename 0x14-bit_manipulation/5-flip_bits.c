@@ -18,7 +18,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int selected;
 	unsigned long int e = n ^ m;
 
-	for (index = 63; index >= 0 index--)
+	for (index = 63; index >= 0; index--)
 	{
 		selected = e >> index;
 
@@ -28,5 +28,4 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		}
 	}
 		return (result);
-
 }
