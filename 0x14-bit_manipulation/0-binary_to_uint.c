@@ -7,26 +7,25 @@
  *
  * @b: A pointer to a string of characters.
  *
- * Return: The converted number, or 0 if there is one or
- * more chars in the string that is not 0 or 1.
+ * Return: The converted number.
  */
 
 unsigned int binary_to_uint(const char *b)
 {
-	int index;
-	unsigned int result = 0;
+	int i;
+	unsigned int dec_val = 0;
 
 	if (!b)
 		return (0);
 
-	for (index = 0; b[index] != '0'; index++)
+	for (i = 0; b[i]; i++)
 	{
-		if (b[index] < '0' || b[index] >  '1')
+		if (b[i] < '0' || b[i] >  '1')
 			return (0);
 
-		result = 2 * result + (b[index] - '0');
+		dec_val = 2 * dec_val + (b[i] - '0');
 	}
 
-	return (result);
+	return (dec_val);
 }
 
